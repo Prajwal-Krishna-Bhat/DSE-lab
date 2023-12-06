@@ -1,9 +1,8 @@
 row=int(input("Enter the no of rows:"))
-for i in range(row+1):
+for i in range(row):
     ch=65
-    for j in range(row-i):
-        print(" ",end=' ')
-    for k in range(i):
+    print("  " * (row-i), end=" ")
+    for k in range(i+1):
         print(chr(ch)," ",end=' ')
         ch+=1
     print("\n")
